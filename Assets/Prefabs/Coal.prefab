@@ -12,6 +12,12 @@ GameObject:
   - component: {fileID: 4174086635006853673}
   - component: {fileID: 8528555821165365938}
   - component: {fileID: 1492309780094233635}
+  - component: {fileID: 8982356580521431321}
+  - component: {fileID: 7944615423311395972}
+  - component: {fileID: -4875873632479244690}
+  - component: {fileID: 1922637694028493091}
+  - component: {fileID: 475535125344601351}
+  - component: {fileID: 8926215604077036329}
   m_Layer: 0
   m_Name: Coal
   m_TagString: Untagged
@@ -95,3 +101,143 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8982356580521431321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2152acb45dbfab34ea781c7a60294c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterLevel: 0.4
+  sandLevel: 0.6
+  dirtLevel: 0.6
+  rockLevel: 0.6
+  snowLevel: 0.9
+  scale: 0.1
+  size: 100
+  lacunarity: 0
+  persistancy: 0
+  octave: 1
+  xOffset: 0
+  yOffset: 0
+  tileWater: {fileID: 0}
+  tileGrass: {fileID: 0}
+  tileSand: {fileID: 0}
+  tileRock: {fileID: 0}
+  tileSnow: {fileID: 0}
+  textureRenderer: {fileID: 0}
+  land: []
+--- !u!114 &7944615423311395972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5185ec24643ce844aaae6bc3c7986f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  underground: 0
+  mapView: {fileID: 0}
+  width: 0
+  length: 0
+  height: 0
+  lacunarity: 0
+  persistancy: 0
+  octave: 1
+  xOffset: 0
+  yOffset: 0
+  scale: 0.1
+  heightWater: 3
+  stoneBlock: {fileID: 0}
+  waterBlock: {fileID: 0}
+  sandBlock: {fileID: 0}
+  dirtBlock: {fileID: 0}
+  waterValue: 0
+  sandValue: 0
+  dirtValue: 0
+  rockValue: 0
+  coalBlock: {fileID: 0}
+  ironBlock: {fileID: 0}
+  goldBlock: {fileID: 0}
+  diamondBlock: {fileID: 0}
+  coalValue: 0
+  ironValue: 0
+  goldValue: 0
+  diamondValue: 0
+  listRock: []
+  frequency: 1.01
+--- !u!114 &-4875873632479244690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d195e4abff847404cac6992951a50128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureRenderer: {fileID: 0}
+--- !u!114 &1922637694028493091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98674256e650f9c43ac0cd717dbd6385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBoundries: 0
+  size: 10
+  height: 20
+  width: 20
+  depth: 20
+  rockValue: 0.6
+  block: {fileID: 0}
+  frequency: 1.01
+--- !u!114 &475535125344601351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9f056643e09664dbc732166aac1cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBoundries: 0
+  size: 10
+  height: 20
+  width: 20
+  depth: 20
+  block: {fileID: 0}
+  frequency: 1.01
+--- !u!114 &8926215604077036329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806976511611747218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f628aa58f96a66b4785a9f7c1fd452f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  z: 0
